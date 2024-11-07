@@ -1,0 +1,315 @@
+{
+    "graphite_epoxy": {
+        "Modulus": {
+            "Ex": {
+                "value": 181e3,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 10.30e3,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 7.17e3,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.28,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 1500,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 1500,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 40,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 246,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 9.48,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 0.125e-3,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1.60e3,
+                "unit": "kg/m^3"
+            }
+        }
+    },
+    "fiberglass": {
+        "Modulus": {
+            "Ex": {
+                "value": 38.90e3,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 8.27e3,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 4.14e3,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.26,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 1062,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 610,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 31,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 118,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 72,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 0.125e-3,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1.80e3,
+                "unit": "kg/m^3"
+            }
+        }
+    },
+    "kevlar_epoxy": {
+        "Modulus": {
+            "Ex": {
+                "value": 76e3,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 5.5e3,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 2.3e3,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.34,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 1400,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 235,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 12,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 53,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 34,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 0.125e-3,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1.46e3,
+                "unit": "kg/m^3"
+            }
+        }
+    },
+    "graphite_epoxy": {
+        "Modulus": {
+            "Ex": {
+                "value": 138e3,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 8.96e3,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 7.10e3,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.30,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 1447,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 1447,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 51.7,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 206,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 93,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 0.125e-3,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1.60e3,
+                "unit": "kg/m^3"
+            }
+        }
+    },
+    "flaxpreg": {
+        "Modulus": {
+            "Ex": {
+                "value": 28200,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 3310,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 5200,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.34,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 286,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 96,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 12,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 41,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 27,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 3.03e-4,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1330,
+                "unit": "kg/m^3"
+            }
+        }
+    },
+    "graphite_thermoplastic": {
+        "Modulus": {
+            "Ex": {
+                "value": 134e3,
+                "unit": "MPa"
+            },
+            "Ey": {
+                "value": 8.90e3,
+                "unit": "MPa"
+            },
+            "Es": {
+                "value": 5.10e3,
+                "unit": "MPa"
+            },
+            "vx": {
+                "value": 0.28,
+                "unit": "none"
+            }
+        },
+        "Strength": {
+            "Xt": {
+                "value": 2130,
+                "unit": "MPa"
+            },
+            "Xc": {
+                "value": 1100,
+                "unit": "MPa"
+            },
+            "Yt": {
+                "value": 80,
+                "unit": "MPa"
+            },
+            "Yc": {
+                "value": 200,
+                "unit": "MPa"
+            },
+            "Sc": {
+                "value": 160,
+                "unit": "MPa"
+            }
+        },
+        "Other": {
+            "ho": {
+                "value": 0.125e-3,
+                "unit": "m"
+            },
+            "rho": {
+                "value": 1.60e3,
+                "unit": "kg/m^3"
+            }
+        }
+    }
+
+}
