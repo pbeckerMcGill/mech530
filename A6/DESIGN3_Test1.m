@@ -5,20 +5,18 @@ L = 0.2;
 W = 0.1;
 
 % Skateboard three-point bend inputs
-P_1 = 1000; % [N]
-L_ = 0.5; % [m]
-b = 0.1; % [m]
-M_1 = -(P_1 * L_) / (4 * b);
-N_1 = (0.5 * P_1) / b;
 
-M_i = [M_1; 0; 0];
-N_i = [N_1; 0; 0];
+% M_i = [-991;-99;-105];
+% N_i = [-22500;3100;-2000];
 
+M_i = [-950;-95;-115];
+N_i = [-20800;-2900;-2250];
 % Inputs
-material_string = "graphite_epoxy_1";
-schedule = [0, 0, 20, -20, 0, 90];
 
-z_c = 0.005; % m
+material_string = "graphite_epoxy_1";
+schedule = [0, 30, -30, 45, -45, 30, -30, 45, -45, 90, 90];
+
+z_c = 0.00075; % m
 
 % Evaluate the laminate
 [maxstress_Rmin, quad_Rmin, hashin_Rmin, mass] = ...

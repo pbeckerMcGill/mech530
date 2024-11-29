@@ -93,7 +93,7 @@ end
 output_table = cell2table(output_table, 'VariableNames', {'Ply', 'Angle (deg)', 'z_height (m)', 'Surface', 'Epsilon_x', 'epsilon_vector', 'on_axis_strain', 'on_axis_stress'});
 
 % Display the table
-% disp(output_table);
+disp(output_table);
 
 % ================================== PREP CRITERIA ==================================
 
@@ -106,12 +106,12 @@ F_s = 1 / S_c.value^2;
 F_xy = sqrt(F_xx * F_yy) * (-1/2);
 
 % Display failure criteria coefficients
-% fprintf('F_xx: %.3e\n', F_xx);
-% fprintf('F_x: %.3e\n', F_x);
-% fprintf('F_yy: %.3e\n', F_yy);
-% fprintf('F_y: %.3e\n', F_y);
-% fprintf('F_s: %.3e\n', F_s);
-% fprintf('F_xy: %.3e\n', F_xy);
+fprintf('F_xx: %.3e\n', F_xx);
+fprintf('F_x: %.3e\n', F_x);
+fprintf('F_yy: %.3e\n', F_yy);
+fprintf('F_y: %.3e\n', F_y);
+fprintf('F_s: %.3e\n', F_s);
+fprintf('F_xy: %.3e\n', F_xy);
 
 % ================================== RUN CRITERIA ==================================
 
@@ -433,10 +433,10 @@ R_values_table_quadratic = cell2table(R_values_table_quadratic, 'VariableNames',
 R_values_table_hashin = cell2table(R_values_table_hashin, 'VariableNames', {'Ply', 'Angle (deg)', 'Surface', 'R_hashin_1', 'R_hashin_2', 'R_hashin_3', 'R_hashin_4'});
 
 % Display tables
-% disp(output_table);
-% disp(R_values_table_max_stress);
-% disp(R_values_table_quadratic);
-% disp(R_values_table_hashin);
+disp(output_table);
+disp(R_values_table_max_stress);
+disp(R_values_table_quadratic);
+disp(R_values_table_hashin);
 % ================================== CONCLUSIONS ==================================
 
 % Find the minimum R value and its layer for Max Stress criterion
@@ -465,17 +465,17 @@ for col = 4:8
 end
 
 failure_mode = failure_modes{min_col};
-% fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row.Ply, min_row.("Angle (deg)"), char(min_row.Surface));
-% fprintf('Smallest R value (failure): R = %.3f\n', min_R);
-% fprintf('Failure Mode: %s\n', failure_mode);
+fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row.Ply, min_row.("Angle (deg)"), char(min_row.Surface));
+fprintf('Smallest R value (failure): R = %.3f\n', min_R);
+fprintf('Failure Mode: %s\n', failure_mode);
 
 % Calculate M_i * R and N_i * R
 M_i_R = M_i * min_R;
 N_i_R = N_i * min_R;
-% fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R);
-% fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R);
+fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R);
+fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R);
 
-% fprintf("\n================= QUADRATIC CRITERION CONCLUSIONS =================\n");
+fprintf("\n================= QUADRATIC CRITERION CONCLUSIONS =================\n");
 
 % Find the minimum positive R value and its layer for Quadratic criterion
 min_R_quad = inf;
@@ -497,16 +497,16 @@ for col = 4:5
     end
 end
 
-% fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row_quad.Ply, min_row_quad.("Angle (deg)"), char(min_row_quad.Surface));
-% fprintf('Smallest R value (failure): R = %.3f\n', min_R_quad);
+fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row_quad.Ply, min_row_quad.("Angle (deg)"), char(min_row_quad.Surface));
+fprintf('Smallest R value (failure): R = %.3f\n', min_R_quad);
 
 % Calculate M_i * R and N_i * R for Quadratic criterion
 M_i_R_quad = M_i * min_R_quad;
 N_i_R_quad = N_i * min_R_quad;
-% fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R_quad);
-% fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R_quad);
+fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R_quad);
+fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R_quad);
 
-% fprintf("\n================= HASHIN CRITERION CONCLUSIONS =================\n");
+fprintf("\n================= HASHIN CRITERION CONCLUSIONS =================\n");
 
 % Initialize variables to track the minimum real positive R value
 min_R_hashin = inf;
@@ -534,15 +534,15 @@ end
 failure_mode_hashin = failure_modes_hashin{min_col_hashin};
 
 % Display the results
-% fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row_hashin.Ply, min_row_hashin.("Angle (deg)"), char(min_row_hashin.Surface));
-% fprintf('Smallest R value (failure): R = %.3f\n', min_R_hashin);
-% fprintf('Failure Mode: %s\n', failure_mode_hashin);
+fprintf('First failure occurs in Ply %d at %.3f degrees on the %s surface.\n', min_row_hashin.Ply, min_row_hashin.("Angle (deg)"), char(min_row_hashin.Surface));
+fprintf('Smallest R value (failure): R = %.3f\n', min_R_hashin);
+fprintf('Failure Mode: %s\n', failure_mode_hashin);
 
 % Calculate M_i * R and N_i * R for Hashin criterion
 M_i_R_hashin = M_i * min_R_hashin;
 N_i_R_hashin = N_i * min_R_hashin;
-% fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R_hashin);
-% fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R_hashin);
+fprintf('M_i * R = [%0.3f; %0.3f; %0.3f] Nm\n', M_i_R_hashin);
+fprintf('N_i * R = [%0.3f; %0.3f; %0.3f] N\n', N_i_R_hashin);
 
 maxstress_Rmin = min_R;
 quad_Rmin = min_R_quad;
